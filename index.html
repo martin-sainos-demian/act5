@@ -7,6 +7,8 @@
     <title>Change request</title>
 </head>
 <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+
     <label for="proyecto">Proyecto:</label><br>
     <input type="text" id="proyecto" name="proyecto"><br>
   
@@ -55,8 +57,8 @@
     <label for="fecha_decision">Fecha de decisión CCB:</label><br>
     <input type="date" id="fecha_decision" name="fecha_decision"><br>
   
-    <label for="implementacion_cambio">Implementación del cambio:</label><br>
-    <input type="text" id="implementacion_cambio" name="implementacion_cambio"><br>
+    <label for="implementador_cambio">Implementación del cambio:</label><br>
+    <input type="text" id="implementador_cambio" name="implementador_cambio"><br>
   
     <label for="fecha_cambio">Fecha de cambio:</label><br>
     <input type="date" id="fecha_cambio" name="fecha_cambio"><br>
@@ -72,31 +74,9 @@
 
     <label for="comentarios">Comentarios del cambio:</label><br>
     <input type="text" id="comentarios" name="comentarios"><br>
-    proyecto
-numero
-solicitante del cambio
-fecha
-cambio solicitado
 
-analizador del cambio
-fecha de analisis
-componentes afectados
-
-componentes asociados
-
-valoracion del cambio
-
-prioridad del cambio
-implementacion del cambio
-esfuerzo estimado
-fecha para equipo SGA app
-desicion
-fecha de desicion CCB
-implementacion del cambio
-fecha de cambio
-fecha de envio a QA
-desicion de QA
-fecha de envio a CM
-comentarios
+    <br>
+    <input type="button" id="pdf" name="pdf" value="PDF"><br>
+    <script src="./main.js"></script>
 </body>
 </html>
